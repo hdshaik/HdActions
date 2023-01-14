@@ -1,0 +1,13 @@
+on: [push]
+jobs:
+    build:
+      name: Greeting
+      # This job runs on Linux
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v2
+      - name: script run
+        run: |
+          echo Add other actions to build,
+
+          echo test, and deploy your project.
